@@ -29,4 +29,29 @@
             ?>
         </p>
     </header><!-- header ends -->
+
+    <!-- Article Content -->
+    <div class="entry-content">
+        <?php
+        if( is_search() ) {
+            the_excerpt();
+        } else {
+            the_content( __('Read More &rarr;', 'architect') );
+
+            wp_link_pages();
+        }
+        ?>
+    </div><!-- end of entry content -->
+
+    <!-- Article Footer -->
+    <footer class="entry-footer">
+        <?php
+        //if we have a single page and the author bio exists, display it
+        if( is_single() && get_the_author_meta( 'description' ) ){
+            echo '<h2>'. __('Written By ', 'architect') . get_the_author() .'</h2>';
+            echo '<p>'. the_author_meta('description') .'</p>';
+        }
+        ?>
+    </footer><!-- entry footer ends here -->
+
 </article>
