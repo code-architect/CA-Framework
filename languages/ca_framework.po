@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CA Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-01 01:32+0530\n"
+"POT-Creation-Date: 2015-04-01 20:14+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Code Architect\n"
@@ -21,4 +21,21 @@ msgstr ""
 
 #: ../functions.php:72
 msgid "Main Menu"
+msgstr ""
+
+#: ../functions.php:106
+msgid "Sticky"
+msgstr ""
+
+#: ../functions.php:133
+msgid "Leave a comment"
+msgstr ""
+
+#: ../functions.php:134
+msgid "One comment so far"
+msgstr ""
+
+#: ../functions.php:135
+#, php-format
+msgid "View all % comments"
 msgstr ""

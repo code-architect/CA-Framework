@@ -90,6 +90,63 @@ if(!function_exists('ca_setup')){
 }
 
 
+/**
+ * ----------------------------------------------------------------------------------------------------------
+ * 5.0 - Display meta information for specific post
+ * ----------------------------------------------------------------------------------------------------------
+ */
+if( !function_exists('ca_post_meta') ){
+    function ca_post_meta(){
+        echo '<ul class="list-inline entry-meta">';
+
+        // check if the post type is post, not a page
+        if(get_post_type() === 'post'){
+            // If there is a sticky post, mark it.
+            if( is_sticky() ){
+                echo '<li class="meta-featured-post"><i class="fa fa-thumb-tack"></i>' . __('Sticky', 'architect') .'</li>';
+            }
+            // Get the post author details.
+            printf(
+                '<li class="meta-author"><a href="%1$s" rel="author">%2$s</a></li>',
+                esc_url(get_author_posts_url( get_the_author_meta('ID') )),
+                get_the_author()
+            );
+            // The date
+            echo '<li class="meta-date">'. get_the_date() .'</li>';
+
+            // The categories
+            $cat_list = get_the_category_list( ', ' );
+            if($cat_list){
+                echo '<li class="meta_categories">'. $cat_list .'</li>';
+            }
+
+            // The tags
+            $tag_list = get_the_tag_list( '',', ' );
+            if($tag_list){
+                echo '<li class="meta_tags">'. $tag_list .'</li>';
+            }
+
+            // Comments Link
+            if( comments_open() ) {
+                echo '<li>';
+                echo '<span class="meta-reply">';
+                comments_popup_link(__('Leave a comment', 'architect'),
+                                    __('One comment so far', 'architect'),
+                                    __('View all % comments', 'architect')
+                );
+                echo '</span>';
+                echo '</li>';
+            }
+
+            // Edit Link
+            if( is_user_logged_in() ){
+                echo '<li>';
+                edit_post_link( __('Edit', 'architect'), '<span class="meta-edit">','</span>' );
+                echo '</li>';
+            }
+        }
+    }
+}
 
 
 
