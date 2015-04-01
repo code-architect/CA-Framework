@@ -86,7 +86,7 @@ if(!function_exists('ca_setup')){
         );
     }
 
-    add_action('after_theme_setup', 'ca_setup');
+    add_action('after_setup_theme', 'ca_setup');
 }
 
 
