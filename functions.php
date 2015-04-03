@@ -149,5 +149,28 @@ if( !function_exists('ca_post_meta') ){
 }
 
 
+/**
+ * ----------------------------------------------------------------------------------------------------------
+ * 6.0 - Display navigation to the next/previous posts.
+ * ----------------------------------------------------------------------------------------------------------
+ */
+if(!function_exists('ca_paging_nav')){
+    function ca_paging_nav(){ ?>
 
+        <ul>
+            <!-- Previous post link -->
+            <?php if(get_previous_posts_link()){ ?>
+            <li class="next">
+                <?php previous_posts_link( __('Newer Post &rarr;', 'architect') ); ?>
+            </li>
+            <?php } ?>
 
+            <!-- Next post link -->
+            <?php if(get_next_posts_link()){ ?>
+                <li class="previous">
+                    <?php next_posts_link( __('&larr; Older Post', 'architect') ); ?>
+                </li>
+            <?php } ?>
+        </ul>
+<?php    }
+}
