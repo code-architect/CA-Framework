@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CA Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-02 02:01+0530\n"
+"POT-Creation-Date: 2015-04-04 20:02+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Code Architect\n"
@@ -19,16 +19,33 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../content-none.php:7
-msgid "Nothing Found!"
+#: ../comments.php:13
+msgid "You cannot access this file directly"
 msgstr ""
 
+#: ../comments.php:22
+msgid ""
+"This post is password protected. Please enter your password to view the "
+"comments"
+msgstr ""
+
+#: ../content-audio.php:31 ../content-gallery.php:31 ../content-image.php:31
+#: ../content-link.php:14 ../content-quote.php:14 ../content-video.php:31
 #: ../content.php:39
 msgid "Read More &rarr;"
 msgstr ""
 
-#: ../content.php:51
+#: ../content-audio.php:42 ../content-gallery.php:42 ../content-image.php:42
+#: ../content-link.php:31 ../content-video.php:42 ../content.php:51
 msgid "Written By "
+msgstr ""
+
+#: ../content-none.php:7
+msgid "Nothing Found!"
+msgstr ""
+
+#: ../footer.php:21
+msgid "All rights reserved."
 msgstr ""
 
 #: ../functions.php:72
@@ -52,6 +69,30 @@ msgstr ""
 msgid "View all % comments"
 msgstr ""
 
-#: ../functions.php:144
+#: ../functions.php:144 ../page.php:41
 msgid "Edit"
+msgstr ""
+
+#: ../functions.php:164
+msgid "Newer Post &rarr;"
+msgstr ""
+
+#: ../functions.php:171
+msgid "&larr; Older Post"
+msgstr ""
+
+#: ../functions.php:191
+msgid "Main Widget Area"
+msgstr ""
+
+#: ../functions.php:193
+msgid "The widget area, appears on pages and posts"
+msgstr ""
+
+#: ../functions.php:203
+msgid "Footern Widget Area"
+msgstr ""
+
+#: ../functions.php:205
+msgid "This appears on the footer"
 msgstr ""
