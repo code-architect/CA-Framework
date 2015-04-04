@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CA Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-04 20:02+0530\n"
+"POT-Creation-Date: 2015-04-04 23:47+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Code Architect\n"
@@ -19,6 +19,21 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SearchPath-0: ..\n"
 
+#: ../archive.php:16
+#, php-format
+msgid "Daily Archives for %s"
+msgstr ""
+
+#: ../archive.php:18
+#, php-format
+msgid "Monthly Archives for %s"
+msgstr ""
+
+#: ../author.php:15
+#, php-format
+msgid "All posts by %s."
+msgstr ""
+
 #: ../comments.php:13
 msgid "You cannot access this file directly"
 msgstr ""
@@ -27,6 +42,18 @@ msgstr ""
 msgid ""
 "This post is password protected. Please enter your password to view the "
 "comments"
+msgstr ""
+
+#: ../comments.php:52
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:66
+msgid "Comments are closed"
 msgstr ""
 
 #: ../content-audio.php:31 ../content-gallery.php:31 ../content-image.php:31
