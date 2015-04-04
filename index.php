@@ -25,6 +25,6 @@
     <?php endif; ?>
 </div> <!-- end main content -->
 
-<?php get_sidebar(); ?>
+<?php get_sidebar(); //the sidebar ?>
 
 <?php get_footer(); ?>

@@ -174,3 +174,51 @@ if(!function_exists('ca_paging_nav')){
         </ul>
 <?php    }
 }
+
+
+/**
+ * ----------------------------------------------------------------------------------------------------------
+ * 7.0 - Register The widget Area / Sidebar
+ * ----------------------------------------------------------------------------------------------------------
+ */
+
+ if(!function_exists( 'ca_widget_init' )){
+     function ca_widget_init(){
+         if(function_exists( 'register_sidebar' )){
+
+             register_sidebar(
+                 array(
+                     'name'          => __( 'Main Widget Area', 'architect' ),
+                     'id'            => 'sidebar-1',
+                     'description'   => __('The widget area, appears on pages and posts', 'architect'),
+                     'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                     'after_widget'  => '</li>',
+                     'before_title'  => '<h5 class="widgettitle">',
+                     'after_title'   => '</h5>'
+                 )
+             );
+
+             register_sidebar(
+                 array(
+                     'name'          => __( 'Footern Widget Area', 'architect' ),
+                     'id'            => 'sidebar-2',
+                     'description'   => __('This appears on the footer', 'architect'),
+                     'before_widget' => '<div id="%1$s" class="widget col-sm-3 %2$s">',
+                     'after_widget'  => '</li>',
+                     'before_title'  => '<h5 class="widgettitle">',
+                     'after_title'   => '</h5>'
+                 )
+             );
+
+         }
+     }
+
+     add_action('widgets_init', 'ca_widget_init');
+ }
+
+
+
+
+
+
+
