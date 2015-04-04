@@ -1,0 +1,47 @@
+<?php
+/**
+ * author.php
+ *
+ * the author archive page
+ */
+?>
+
+<?php get_header(); ?>
+
+    <div class="main-content col-md-8" role="main">
+        <?php if(have_posts()): the_post(); ?>
+            <header class="page-header">
+                <h1>
+                    <?php printf( __('All posts by %s.', 'architect'), get_the_author() ); ?>
+                </h1>
+
+                <?php
+                // If the author bio, exists, display it.
+                if(get_the_author_meta('description')){
+                    echo '<p>'.the_author_meta('description').'</p>';
+                }
+                ?>
+
+                <?php
+                // rewind the loop to the very beginning
+                rewind_posts(); ?>
+            </header>
+
+            <?php
+            // starting the loop again
+            while(have_posts()): the_post();
+                get_template_part('content', get_post_format());
+            endwhile;
+            ?>
+
+            <?php ca_paging_nav(); ?>
+
+            <?php else: ?>
+                <?php get_template_part('content', 'none'); ?>
+
+        <?php endif; ?>
+    </div><!-- end main content -->
+
+<?php get_sidebar(); ?>
+
+<?php get_footer(); ?>
