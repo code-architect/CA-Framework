@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Widgets Small About Me\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-18 02:58+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Code Architect\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation_Date: 2015-01-13 22:24-0500PO-Revision-Date: 2015-01-13 "
+"22:25-0500Last-Transfer:\n"
+"MINE-Version: 1.0\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../small-about-me.php:36
+msgid "Small About Me"
+msgstr ""
+
+#: ../small-about-me.php:39
+msgid "A small widget for small introduction of self, or small about me."
+msgstr ""
+
+#: ../views/admin.php:3
+msgid "Your Name"
+msgstr ""
+
+#: ../views/admin.php:14
+msgid "Your Bio"
+msgstr ""
+
+#: ../views/admin.php:25
+msgid "You have "
+msgstr ""
+
+#: ../views/admin.php:27
+msgid " characters remaining."
+msgstr ""
+
+#: ../views/admin.php:32
+msgid "Display name"
+msgstr ""
+
+#: ../views/admin.php:37
+msgid "above the bio"
+msgstr ""
+
+#: ../views/admin.php:38
+msgid "below the bio"
+msgstr ""
+
+#: ../views/admin.php:50
+msgid "Display only on the homepage?"
+msgstr ""

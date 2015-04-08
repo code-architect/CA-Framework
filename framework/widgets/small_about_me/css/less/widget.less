@@ -1,0 +1,19 @@
+@weight: bold;
+@size: 14px;
+
+.remove_margin(){
+  margin: 0;
+}
+
+.small-about-me{
+  .small-about-me-name{
+    font-weight: @weight;
+    font-size: @size;
+    .remove_margin();
+    color: red;
+  }
+  .small-about-me-bio{
+    font-size: @size;
+    .remove_margin();
+  }
+}

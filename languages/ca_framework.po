@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CA Framework\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-04 23:47+0530\n"
+"POT-Creation-Date: 2015-04-08 16:45+0530\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Code Architect\n"
@@ -19,6 +19,14 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SearchPath-0: ..\n"
 
+#: ../404.php:12
+msgid "Error 404 Noting Found"
+msgstr ""
+
+#: ../404.php:14
+msgid "Nothing was found here. Try a Search"
+msgstr ""
+
 #: ../archive.php:16
 #, php-format
 msgid "Daily Archives for %s"
@@ -29,9 +37,23 @@ msgstr ""
 msgid "Monthly Archives for %s"
 msgstr ""
 
+#: ../archive.php:20
+#, php-format
+msgid "Yearly Archives for %s"
+msgstr ""
+
+#: ../archive.php:22
+msgid "Archives"
+msgstr ""
+
 #: ../author.php:15
 #, php-format
 msgid "All posts by %s."
+msgstr ""
+
+#: ../category.php:14
+#, php-format
+msgid "Category archive for %s"
 msgstr ""
 
 #: ../comments.php:13
@@ -96,7 +118,8 @@ msgstr ""
 msgid "View all % comments"
 msgstr ""
 
-#: ../functions.php:144 ../page.php:41
+#: ../functions.php:144 ../page.php:41 ../template-contact.php:127
+#: ../template-fullwidth.php:41
 msgid "Edit"
 msgstr ""
 
@@ -122,4 +145,141 @@ msgstr ""
 
 #: ../functions.php:205
 msgid "This appears on the footer"
+msgstr ""
+
+#: ../search.php:16
+#, php-format
+msgid "Search results for %s"
+msgstr ""
+
+#: ../tag.php:14
+#, php-format
+msgid "Tag archive for %s"
+msgstr ""
+
+#: ../template-contact.php:13
+msgid "Please enter your name."
+msgstr ""
+
+#: ../template-contact.php:14
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: ../template-contact.php:15
+msgid "Please enter the message."
+msgstr ""
+
+#: ../template-contact.php:46
+#, php-format
+msgid "You have been contacted by %s"
+msgstr ""
+
+#: ../template-contact.php:47
+#, php-format
+msgid "You have been contacted by %1$s. Their message is:"
+msgstr ""
+
+#: ../template-contact.php:49
+#, php-format
+msgid "You can contact %1$s via email at %2$s"
+msgstr ""
+
+#: ../template-contact.php:79
+msgid "Your message has been sucessfully sent, thank you!"
+msgstr ""
+
+#: ../template-contact.php:87
+msgid "Sorry, it seems there was an error."
+msgstr ""
+
+#: ../template-contact.php:94
+msgid "Name:"
+msgstr ""
+
+#: ../template-contact.php:102
+msgid "Email Address:"
+msgstr ""
+
+#: ../template-contact.php:110
+msgid "Message:"
+msgstr ""
+
+#: ../template-contact.php:118
+msgid "Send Message"
+msgstr ""
+
+#: ../framework/widgets/business_time/class.business-time.php:13
+msgid "Business Time"
+msgstr ""
+
+#: ../framework/widgets/business_time/class.business-time.php:16
+msgid "A small widget for showing business time"
+msgstr ""
+
+#: ../framework/widgets/business_time/class.business-time.php:29
+msgid "Business Hours"
+msgstr ""
+
+#: ../framework/widgets/business_time/views/admin.php:4
+msgid "Title:"
+msgstr ""
+
+#: ../framework/widgets/business_time/views/admin.php:17
+msgid "Description"
+msgstr ""
+
+#: ../framework/widgets/business_time/views/admin.php:39
+msgid "Time on Monday to Friday"
+msgstr ""
+
+#: ../framework/widgets/business_time/views/admin.php:52
+msgid "Time on Saturday"
+msgstr ""
+
+#: ../framework/widgets/business_time/views/admin.php:65
+msgid "Time on Sunday"
+msgstr ""
+
+#: ../framework/widgets/business_time/views/admin.php:84
+msgid "Show this widget on Homepage Only?"
+msgstr ""
+
+#: ../framework/widgets/small_about_me/small-about-me.php:36
+msgid "Small About Me"
+msgstr ""
+
+#: ../framework/widgets/small_about_me/small-about-me.php:39
+msgid "A small widget for small introduction of self, or small about me."
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:3
+msgid "Your Name"
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:14
+msgid "Your Bio"
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:25
+msgid "You have "
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:27
+msgid " characters remaining."
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:32
+msgid "Display name"
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:37
+msgid "above the bio"
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:38
+msgid "below the bio"
+msgstr ""
+
+#: ../framework/widgets/small_about_me/views/admin.php:50
+msgid "Display only on the homepage?"
 msgstr ""

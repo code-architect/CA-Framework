@@ -1,0 +1,10 @@
+.small-about-me .small-about-me-name {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+  color: red;
+}
+.small-about-me .small-about-me-bio {
+  font-size: 14px;
+  margin: 0;
+}
