@@ -217,7 +217,17 @@ if(!function_exists('ca_paging_nav')){
  }
 
 
-
+/**
+ * ----------------------------------------------------------------------------------------------------------
+ * 8.0 - Function that's validates a length
+ * ----------------------------------------------------------------------------------------------------------
+ */
+if( !function_exists( 'ca_length_check' ) ){
+    function ca_length_check( $fieldValue, $minLength ){
+        // Remove trailing and leading whitespace
+        return ( strlen( trim( $fieldValue ) ) > $minLength );
+    }
+}
 
 
 
