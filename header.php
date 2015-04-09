@@ -25,8 +25,6 @@ $touch_icon = IMAGES . '/iconified/apple-touch-icon-152x152.png';
         <!-- mobile specific meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" />
 
         <!-- Icons -->
         <link rel="shortcut icon" href="<?php echo $favicon; ?>" />

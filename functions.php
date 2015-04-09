@@ -229,6 +229,58 @@ if( !function_exists( 'ca_length_check' ) ){
     }
 }
 
+/**
+ * ----------------------------------------------------------------------------------------------------------
+ * 9.0 - Include css in the page for header.
+ * ----------------------------------------------------------------------------------------------------------
+ */
+if(!function_exists('ca_wp_head_style')){
+    function ca_wp_head_style(){
+        // Get the logo
+        $logo = IMAGES.'/iconified/logo.jpg';
 
+        $logo_size = getimagesize($logo);
+        ?>
+        <!-- Inline Css for logo -->
+        <style type="text/css">
+            .site-log a{
+                background: transparent url( <?php echo $logo; ?> ) 0 0 no-repeat;
+                width: <?php echo $logo_size[0] ?>px;
+                height: <?php echo $logo_size[1] ?>px;
+                display: inline-block;
+            }
+        </style>
+        <?php
 
+    }
 
+    add_action('wp_head', 'ca_wp_head_style');
+}
+
+/**
+ * ----------------------------------------------------------------------------------------------------------
+ * 10.0 - Add all the css and javascript for this theme if needed
+ * ----------------------------------------------------------------------------------------------------------
+ */
+if(!function_exists('ca_add_scripts_and_styles')){
+    function ca_add_scripts_and_styles(){
+        // Adds Support for pages with threaded comments
+        if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+            wp_enqueue_script( 'comment-reply' );
+        }
+
+        // Register scripts
+        wp_register_script('bootstrap.min.js', SCRIPTS.'/bootstrap.min.js', array('jquery'), false, true);
+        wp_register_script('custom-js', SCRIPTS.'/custom.js', array('jquery'), false, true);
+
+        // Load scripts
+        wp_enqueue_script('bootstrap.min.js');
+        wp_enqueue_script('custom-js');
+
+        // Load the stylesheets
+        wp_enqueue_style('bootstrap-style', THEMEROOT .'/css/bootstrap.min.css');
+        wp_enqueue_style('bootstrap-responsive-style', THEMEROOT .'/css/bootstrap-responsive.min.css');
+    }
+
+    add_action('wp_enqueue_scripts', 'ca_add_scripts_and_styles');
+}
